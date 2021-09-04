@@ -442,7 +442,7 @@
         </div>
       </div>
 
-      <form method="post" autocomplete="off" class="php-email-form mt-4" name="gmessage">
+      <form method="POST" role="form" autocomplete="off" class="php-email-form mt-4" name="google-sheet">
         <div class="row">
           <div class="col-md-6 form-group">
             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -482,13 +482,13 @@
 
   <!-- Google Sheet JS-->
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyGOo420HSrs_VGJBONT_fsLvbp3OsquwNYupn76FTKIfDQ4Ioj2U5setfkVh-_hNA/exec'
-    const form = document.forms['gmessage']
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzdsyc5W46ORpfAgHJ9L3iQQ9lKb8sTvPDYyGDZOsj8oRgbEAHdJBK0N0exAZWuhQ-1/exec'
+    const form = document.forms['google-sheet']
   
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert("Your message has been sent. Thank you!"))
+        .then(response => alert("Your message has been sent. As soon as i'll be reply you. Thank you!"))
         .catch(error => console.error('Error!', error.message))
     })
   </script>
