@@ -513,6 +513,63 @@ section .container {
   transition: ease-in-out 0.3s;
 }
 
+.quotes-title h2 {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 25px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.quotes-title h2::after {
+    content: "";
+    height: 1px;
+    display: inline-block;
+    background: #f8b34b;
+    margin: 4px 10px;
+  }
+
+@media (max-width: 1440px) {
+    .quotes-title h2::after {
+    width: 250px;
+    margin-left: 425px;
+  }
+}
+@media (max-width: 1024px) {
+    .quotes-title h2::after {
+    width: 250px;
+    margin-left: 325px;
+  }
+}
+@media (max-width: 768px) {
+    .quotes-title h2::after {
+    width: 250px;
+    margin-left: 185px;
+  }
+}
+@media (max-width: 425px) {
+    .quotes-title h2::after {
+    width: 200px;
+    margin-left: 80px;
+  }
+}
+@media (max-width: 375px) {
+    .quotes-title h2::after {
+    width: 200px;
+    margin-left: 60px;
+  }
+}
+@media (max-width: 320px) {
+    .quotes-title h2::after {
+    width: 200px;
+    margin-left: 25px;
+  }
+}
+
 .quotes-item .quote-icon-left, .quotes-item .quote-icon-right {
   color: rgba(255, 255, 255, 0.25);
   font-size: 26px;
@@ -541,7 +598,6 @@ section .container {
   position: relative;
   z-index: 1;
 }
-
 
 /*--------------------------------------------------------------
 # Interests
