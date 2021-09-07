@@ -8,7 +8,7 @@ body {
   position: relative;
   background: transparent;
 }
-
+ 
 body::before {
   content: "";
   position: fixed;
@@ -502,6 +502,46 @@ section .container {
   transition: .9s;
   background-color: #f8b34b;
 }
+
+/*--------------------------------------------------------------
+# Quotes
+--------------------------------------------------------------*/
+.quotes-item {
+  display: flex;
+  padding-top: 25px;
+  align-items: center;
+  transition: ease-in-out 0.3s;
+}
+
+.quotes-item .quote-icon-left, .quotes-item .quote-icon-right {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 26px;
+}
+
+.quotes-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.quotes-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.quotes-item p {
+  font-style: italic;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 60px 20px;
+  background-color: #040404;
+  position: relative;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+
 
 /*--------------------------------------------------------------
 # Interests
